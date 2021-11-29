@@ -36,3 +36,5 @@ pygame.draw.line(windowSurface, RED, (60, 60), (120, 60), 4 )
 pygame.draw.line(windowSurface, RED, (120, 60), (60, 120))
 pygame.draw.line(windowSurface, RED, (60, 120), (120, 120), 4)
 
+# Draw a circle 
+
