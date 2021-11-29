@@ -6,7 +6,7 @@ from pygame.locals import *
 # start PyGame 
 pygame.init() 
 # Create Game Window
-windowSurface = pygame.display.set_mode( (500,400)0, 32)
+windowSurface = pygame.display.set_mode((500,400), 0, 32)
 pygame.display.set_caption("Hello, world!")
 
 # Set Color Values
@@ -29,7 +29,7 @@ textRect.centerx = windowSurface.get_rect().centerx
 windowSurface.fill(WHITE)
 
 # Draw a green polygon into the surface =. 
-pygame.draw.polygame(windowSurface, RED, ((146, 0),(291, 106),(236, 277), (0, 106)))
+pygame.draw.polygon(windowSurface, RED, ((146, 0),(291, 106),(236, 277), (0, 106)))
 
 # Draw red lines on the windowSurface
 pygame.draw.line(windowSurface, RED, (60, 60), (120, 60), 4 )
@@ -37,4 +37,7 @@ pygame.draw.line(windowSurface, RED, (120, 60), (60, 120))
 pygame.draw.line(windowSurface, RED, (60, 120), (120, 120), 4)
 
 # Draw a circle 
+pygame.draw.circle(windowSurface, BLUE, (300, 50), 20, 0)
 
+# Draw an ellipse
+pygame.draw.ellipse(windowSurface, RED, (300, 250, 40, 80), 1)
