@@ -29,6 +29,10 @@ textRect.centerx = windowSurface.get_rect().centerx
 windowSurface.fill(WHITE)
 
 # Draw a green polygon into the surface =. 
-pygame.draw.polygame(windowSurface, RED, ((146, 0),(291, 106),(236, 277), (0, ))
+pygame.draw.polygame(windowSurface, RED, ((146, 0),(291, 106),(236, 277), (0, 106)))
 
+# Draw red lines on the windowSurface
+pygame.draw.line(windowSurface, RED, (60, 60), (120, 60), 4 )
+pygame.draw.line(windowSurface, RED, (120, 60), (60, 120))
+pygame.draw.line(windowSurface, RED, (60, 120), (120, 120), 4)
 
