@@ -20,5 +20,15 @@ BLUE = (0, 0, 255)
 basicFont = pygame.font.SysFont(None, 48)
 
 # Setup Text
-text = basicFont.render('Hello World!')
+text = basicFont.render('Hello World!', True, WHITE, BLUE)
+textRect = text.get_rect()
+textRect.centerx = windowSurface.get_rect().centerx
+textRect.centerx = windowSurface.get_rect().centerx
+
+# Draw background into window surface. 
+windowSurface.fill(WHITE)
+
+# Draw a green polygon into the surface =. 
+pygame.draw.polygame(windowSurface, RED, ((146, 0),(291, 106),(236, 277), (0, ))
+
 
